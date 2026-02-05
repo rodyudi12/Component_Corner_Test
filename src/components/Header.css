@@ -1,0 +1,43 @@
+.header {
+  background-color: #2c3e50;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  font-family: Arial, sans-serif;
+
+  width: 80vw;         /* full width across screen */
+  box-sizing: border-box;
+
+  flex-wrap: nowrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 1.8rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+nav ul {
+  display: flex;        /* makes li side by side */
+  gap: 16px;            /* space between links */
+  list-style: none;     /* remove bullets */
+  margin: 0;            /* remove default ul margin */
+  padding: 0;           /* remove default ul padding */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
